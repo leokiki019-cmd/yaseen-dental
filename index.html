@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaseen Dental Care - Dr. Naveed Yaseen | Say it with smile</title>
+    <meta name="description" content="Professional cosmetic and family dental care by Dr. Naveed Yaseen. 100% sterilized, painless treatments in a modern clinic on Main GT Road.">
+    <meta property="og:title" content="Yaseen Dental Care - Dr. Naveed Yaseen | Say it with smile">
+    <meta property="og:description" content="State-of-the-art cosmetic and family dentistry by Dr. Naveed Yaseen. Book your consultation today!">
+    <meta property="og:type" content="website">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        darkBg: '#1A1A1A',
+                        charcoal: '#2D2D2D',
+                        gold: '#D4A843',
+                        goldLight: '#F0D68A',
+                        goldDark: '#B8922E',
+                        warmCream: '#FAF7F0',
+                        warmWhite: '#F5F0E8',
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+                        serif: ['Playfair Display', 'Georgia', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #D4A843 0%, #F0D68A 50%, #B8922E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #D4A843 0%, #B8922E 100%);
+            transition: all 0.3s ease;
+        }
+        .gold-btn:hover {
+            background: linear-gradient(135deg, #E0B84E 0%, #C9A035 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(212, 168, 67, 0.35);
+        }
+        .glass-card-dark {
+            background: rgba(45, 45, 45, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(212, 168, 67, 0.2);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+        }
+        .dark-hex-pattern {
+            background-color: #1A1A1A;
+            background-image:
+                linear-gradient(30deg, rgba(45, 45, 45, 0.6) 12%, transparent 12.5%, transparent 87%, rgba(45, 45, 45, 0.6) 87.5%, rgba(45, 45, 45, 0.6)),
+                linear-gradient(150deg, rgba(45, 45, 45, 0.6) 12%, transparent 12.5%, transparent 87%, rgba(45, 45, 45, 0.6) 87.5%, rgba(45, 45, 45, 0.6)),
+                linear-gradient(30deg, rgba(45, 45, 45, 0.6) 12%, transparent 12.5%, transparent 87%, rgba(45, 45, 45, 0.6) 87.5%, rgba(45, 45, 45, 0.6)),
+                linear-gradient(150deg, rgba(45, 45, 45, 0.6) 12%, transparent 12.5%, transparent 87%, rgba(45, 45, 45, 0.6) 87.5%, rgba(45, 45, 45, 0.6)),
+                linear-gradient(90deg, rgba(26, 26, 26, 0.8) 2%, #1A1A1A 2% 98%, rgba(26, 26, 26, 0.8) 98%);
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0;
+        }
+        .gold-pill {
+            background: linear-gradient(135deg, rgba(212, 168, 67, 0.15) 0%, rgba(184, 146, 46, 0.15) 100%);
+            border: 1px solid rgba(212, 168, 67, 0.3);
+            color: #D4A843;
+        }
+        .diagonal-stripes {
+            background-image: repeating-linear-gradient(
+                45deg,
+                transparent,
+                transparent 10px,
+                rgba(212, 168, 67, 0.03) 10px,
+                rgba(212, 168, 67, 0.03) 20px
+            );
+        }
+        .service-card {
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(212, 168, 67, 0.15);
+        }
+        .crown-float {
+            animation: crownFloat 3s ease-in-out infinite;
+        }
+        @keyframes crownFloat {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+        .hero-dark {
+            background: #1A1A1A;
+            background: linear-gradient(180deg, #111111 0%, #1A1A1A 50%, #222222 100%);
+        }
+        .hero-texture {
+            background-image:
+                radial-gradient(circle at 20% 50%, rgba(212, 168, 67, 0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(212, 168, 67, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 60% 80%, rgba(0,0,0,0.3) 0%, transparent 40%);
+        }
+        .hero-title {
+            text-shadow: 0 4px 20px rgba(212, 168, 67, 0.3), 0 2px 8px rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body class="bg-darkBg text-slate-200 font-sans antialiased selection:bg-gold selection:text-darkBg">
+
+    <!-- Top Announcement Banner -->
+    <div class="bg-gradient-to-r from-charcoal via-darkBg to-charcoal text-goldLight text-xs md:text-sm py-2.5 px-4 border-b border-gold/20 text-center relative z-50 diagonal-stripes">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center justify-center gap-2 mx-auto sm:mx-0">
+                <span class="bg-gold text-darkBg font-extrabold text-[10px] uppercase px-2 py-0.5 rounded-full animate-pulse">Special Offer</span>
+                <span>Free Initial Consultation & 20% Off Teeth Whitening This Week!</span>
+            </div>
+            <div class="hidden md:flex items-center gap-4 text-xs">
+                <span><i class="fa-solid fa-location-dot text-gold mr-1"></i> Main GT Road</span>
+                <a href="tel:+923117473314" class="hover:text-white font-bold"><i class="fa-solid fa-phone text-gold mr-1"></i> 0311 7473314</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-40 bg-darkBg/95 backdrop-blur-xl border-b border-gold/15 shadow-lg shadow-black/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 group">
+                <div class="w-14 h-14 rounded-2xl bg-gradient-to-br from-gold to-goldDark border-2 border-goldLight/30 flex items-center justify-center shadow-lg group-hover:scale-105 transition-all duration-300 group-hover:shadow-xl group-hover:shadow-gold/20">
+                    <svg viewBox="0 0 100 100" class="w-10 h-10">
+                        <path d="M30 38 L35 18 L42 30 L50 14 L58 30 L65 18 L70 38 Z" fill="#1A1A1A"/>
+                        <circle cx="35" cy="17" r="2.5" fill="#1A1A1A"/>
+                        <circle cx="42" cy="29" r="2" fill="#1A1A1A"/>
+                        <circle cx="50" cy="13" r="2.5" fill="#1A1A1A"/>
+                        <circle cx="58" cy="29" r="2" fill="#1A1A1A"/>
+                        <circle cx="65" cy="17" r="2.5" fill="#1A1A1A"/>
+                        <rect x="28" y="37" width="44" height="4" rx="1.5" fill="#1A1A1A"/>
+                        <path d="M36 45 C36 42 42 41 50 44 C58 41 64 42 64 45 C67 52 66 62 62 67 C59 71 57 79 54 83 C53 85 51 86 50 86 C49 86 47 85 46 83 C43 79 41 71 38 67 C34 62 33 52 36 45 Z" fill="#1A1A1A"/>
+                    </svg>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-lg sm:text-2xl font-serif font-bold gold-gradient-text tracking-wide leading-tight">Yaseen Dental Care</span>
+                    <span class="text-[10px] sm:text-xs font-semibold tracking-[0.2em] text-goldLight/60 uppercase">Say it with smile</span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-8 text-sm font-semibold text-slate-400">
+                <a href="#services" class="hover:text-gold transition-colors">Services</a>
+                <a href="#why-us" class="hover:text-gold transition-colors">Why Us</a>
+                <a href="#doctor" class="hover:text-gold transition-colors">Dr. Naveed Yaseen</a>
+                <a href="#testimonials" class="hover:text-gold transition-colors">Reviews</a>
+                <a href="#faq" class="hover:text-gold transition-colors">FAQ</a>
+                <a href="#location" class="hover:text-gold transition-colors">Location</a>
+            </nav>
+
+            <div class="hidden sm:flex items-center gap-3">
+                <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" rel="noopener noreferrer" class="bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-2.5 rounded-xl text-sm font-semibold shadow-md flex items-center gap-2 transition transform hover:-translate-y-0.5">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp
+                </a>
+                <a href="tel:+923117473314" class="gold-btn text-darkBg px-4 py-2.5 rounded-xl text-sm font-bold shadow-md flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now
+                </a>
+            </div>
+
+            <button id="menu-btn" class="lg:hidden text-gold p-2 focus:outline-none" aria-label="Toggle Menu">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <div id="mobile-menu" class="hidden lg:hidden bg-charcoal border-t border-gold/10 px-6 py-6 space-y-4 shadow-xl">
+            <a href="#services" class="block text-slate-300 hover:text-gold font-semibold py-1">Services</a>
+            <a href="#why-us" class="block text-slate-300 hover:text-gold font-semibold py-1">Why Us</a>
+            <a href="#doctor" class="block text-slate-300 hover:text-gold font-semibold py-1">Dr. Naveed Yaseen</a>
+            <a href="#testimonials" class="block text-slate-300 hover:text-gold font-semibold py-1">Reviews</a>
+            <a href="#faq" class="block text-slate-300 hover:text-gold font-semibold py-1">FAQ</a>
+            <a href="#location" class="block text-slate-300 hover:text-gold font-semibold py-1">Location</a>
+            <div class="pt-4 flex flex-col gap-3">
+                <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20would%20like%20to%20book%20an%20appointment." target="_blank" class="bg-emerald-500 text-center text-white py-3 rounded-xl font-semibold flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> WhatsApp Appointment
+                </a>
+                <a href="tel:+923117473314" class="gold-btn text-center text-darkBg py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call Now (0311 7473314)
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-dark hero-texture diagonal-stripes relative text-white py-16 lg:py-24 px-4 sm:px-6 lg:px-8 overflow-hidden" style="background: #111111 !important;">
+        <div class="absolute -top-32 -left-32 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute -bottom-32 -right-32 w-96 h-96 bg-gold/8 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
+            <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                <!-- Large Crowned Tooth Logo -->
+                <div class="flex flex-col items-center lg:items-start mb-4">
+                    <div class="relative mb-4">
+                        <div class="absolute inset-0 bg-gold/10 rounded-full blur-3xl scale-[2]"></div>
+                        <svg viewBox="0 0 200 220" class="w-56 h-60 sm:w-64 sm:h-72 lg:w-80 lg:h-[360px] drop-shadow-2xl crown-float relative z-10">
+                            <defs>
+                                <linearGradient id="heroGold" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" stop-color="#F0D68A"/>
+                                    <stop offset="50%" stop-color="#D4A843"/>
+                                    <stop offset="100%" stop-color="#B8922E"/>
+                                </linearGradient>
+                            </defs>
+                            <!-- Crown -->
+                            <path d="M60 75 L70 35 L85 58 L100 28 L115 58 L130 35 L140 75 Z" fill="url(#heroGold)"/>
+                            <circle cx="70" cy="33" r="5" fill="url(#heroGold)"/>
+                            <circle cx="85" cy="56" r="4" fill="url(#heroGold)"/>
+                            <circle cx="100" cy="26" r="5" fill="url(#heroGold)"/>
+                            <circle cx="115" cy="56" r="4" fill="url(#heroGold)"/>
+                            <circle cx="130" cy="33" r="5" fill="url(#heroGold)"/>
+                            <rect x="56" y="73" width="88" height="8" rx="2" fill="url(#heroGold)"/>
+                            <!-- Tooth -->
+                            <path d="M72 88 C72 82 84 80 100 86 C116 80 128 82 128 88 C134 100 132 120 124 132 C119 141 115 156 108 164 C106 168 104 170 100 170 C96 170 94 168 92 164 C85 156 81 141 76 132 C68 120 66 100 72 88 Z" fill="url(#heroGold)"/>
+                        </svg>
+                    </div>
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-bold leading-tight tracking-tight hero-title">
+                        <span class="gold-gradient-text">YASEEN</span>
+                        <br>
+                        <span class="text-white">DENTAL CARE</span>
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-serif font-semibold text-gold mt-3 tracking-wide">Dr. Naveed Yaseen</p>
+                    <p class="text-sm text-slate-400 mt-1 italic tracking-widest">Say it with smile</p>
+                </div>
+
+                <div class="inline-flex items-center gap-2 bg-gold/10 border-2 border-gold/30 px-5 py-2.5 rounded-full text-goldLight text-xs sm:text-sm font-bold tracking-wide backdrop-blur-sm shadow-lg">
+                    <i class="fa-solid fa-shield-heart text-gold"></i>
+                    <span>100% Sterilized & Painless Treatments</span>
+                </div>
+
+                <p class="text-lg sm:text-xl text-slate-300 max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed">
+                    Professional cosmetic and restorative dentistry in a modern clinic environment tailored for men, women, children, and families.
+                </p>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2 pb-4 text-left max-w-lg mx-auto lg:mx-0">
+                    <div class="flex items-center gap-2.5 bg-gold/10 border-2 border-gold/20 p-3 rounded-xl backdrop-blur-sm shadow-lg">
+                        <i class="fa-solid fa-circle-check text-gold text-lg"></i>
+                        <span class="text-sm font-bold text-goldLight">Expert Dentist</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gold/10 border-2 border-gold/20 p-3 rounded-xl backdrop-blur-sm shadow-lg">
+                        <i class="fa-solid fa-circle-check text-gold text-lg"></i>
+                        <span class="text-sm font-bold text-goldLight">Advanced Tech</span>
+                    </div>
+                    <div class="flex items-center gap-2.5 bg-gold/10 border-2 border-gold/20 p-3 rounded-xl backdrop-blur-sm shadow-lg col-span-2 sm:col-span-1">
+                        <i class="fa-solid fa-circle-check text-gold text-lg"></i>
+                        <span class="text-sm font-bold text-goldLight">Modern Clinic</span>
+                    </div>
+                </div>
+
+                <div class="pt-2 flex justify-center lg:justify-start">
+                    <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer" class="gold-btn text-darkBg font-extrabold px-8 py-4 rounded-xl shadow-2xl transition transform hover:-translate-y-1 text-center flex items-center justify-center gap-3 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl text-emerald-800"></i> Inquire on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Appointment Booking Card -->
+            <div class="lg:col-span-5">
+                <div id="appointment-form" class="bg-charcoal rounded-3xl p-6 sm:p-8 text-white shadow-2xl relative border-2 border-gold/20">
+                    <div class="absolute -top-4 right-6 gold-btn text-darkBg text-xs font-extrabold uppercase px-4 py-1.5 rounded-full shadow-lg">
+                        Instant Booking
+                    </div>
+
+                    <h3 class="text-2xl font-serif font-bold gold-gradient-text mb-1">Schedule Your Visit</h3>
+                    <p class="text-xs sm:text-sm text-slate-400 mb-6">Fill in your details for a priority confirmation with Dr. Naveed Yaseen.</p>
+
+                    <form id="booking-form" onsubmit="handleBooking(event)" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Patient Full Name</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gold">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
+                                <input type="text" id="patient-name" required placeholder="e.g. Ahmed Khan" class="w-full pl-10 pr-4 py-3 bg-darkBg border-2 border-gold/15 rounded-xl text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition text-white placeholder-slate-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Phone Number</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gold">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <input type="tel" id="patient-phone" required placeholder="0311 7473314" class="w-full pl-10 pr-4 py-3 bg-darkBg border-2 border-gold/15 rounded-xl text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition text-white placeholder-slate-500">
+                            </div>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Selected Service</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-gold">
+                                    <i class="fa-solid fa-tooth"></i>
+                                </span>
+                                <select id="patient-service" class="w-full pl-10 pr-4 py-3 bg-darkBg border-2 border-gold/15 rounded-xl text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition appearance-none text-white">
+                                    <option value="Cosmetic Dentistry & Teeth Whitening">Cosmetic Dentistry & Teeth Whitening</option>
+                                    <option value="Orthodontics & Aligners">Orthodontics & Aligners</option>
+                                    <option value="Dental Implants & Crowns">Dental Implants & Crowns</option>
+                                    <option value="Pediatric & Family Dentistry">Pediatric & Family Dentistry</option>
+                                    <option value="General Consultation & Checkup">General Consultation & Checkup</option>
+                                </select>
+                                <span class="absolute inset-y-0 right-0 pr-3 flex items-center text-gold pointer-events-none">
+                                    <i class="fa-solid fa-chevron-down text-xs"></i>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Preferred Date</label>
+                                <input type="date" id="patient-date" required class="w-full px-3 py-3 bg-darkBg border-2 border-gold/15 rounded-xl text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition text-white">
+                            </div>
+                            <div>
+                                <label class="block text-xs font-semibold uppercase text-slate-400 mb-1">Time Slot</label>
+                                <select id="patient-time" class="w-full px-3 py-3 bg-darkBg border-2 border-gold/15 rounded-xl text-sm focus:outline-none focus:border-gold focus:ring-2 focus:ring-gold/20 transition text-white">
+                                    <option value="3:00 PM - 4:00 PM">3:00 PM - 4:00 PM</option>
+                                    <option value="4:00 PM - 5:00 PM">4:00 PM - 5:00 PM</option>
+                                    <option value="5:00 PM - 6:00 PM">5:00 PM - 6:00 PM</option>
+                                    <option value="6:00 PM - 7:00 PM">6:00 PM - 7:00 PM</option>
+                                    <option value="7:00 PM - 8:00 PM">7:00 PM - 8:00 PM</option>
+                                    <option value="8:00 PM - 9:00 PM">8:00 PM - 9:00 PM</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <button type="submit" class="w-full gold-btn text-darkBg font-bold py-4 rounded-xl shadow-lg transition flex items-center justify-center gap-2 mt-2">
+                            <i class="fa-brands fa-whatsapp text-xl text-emerald-800"></i> Submit Inquiry
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services Section -->
+    <section id="services" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">Excellence in Dental Care</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-4 mb-4">Our Core Specialized Services</h2>
+                <p class="text-slate-400 text-sm sm:text-base">We provide advanced dental treatments using cutting-edge technology and pain-free techniques in a soothing atmosphere.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-darkBg border border-gold/10 rounded-3xl p-6 shadow-sm service-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-3">Cosmetic Dentistry & Whitening</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Transform your smile with laser teeth whitening, porcelain veneers, and Hollywood smile makeovers tailored for you.</p>
+                    </div>
+                    <a href="#appointment-form" onclick="selectService('Cosmetic Dentistry & Teeth Whitening')" class="inline-flex items-center gap-2 text-sm font-bold text-gold transition hover:text-goldLight">
+                        <span>Book Treatment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-darkBg border border-gold/10 rounded-3xl p-6 shadow-sm service-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-teeth"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-3">Orthodontics & Clear Aligners</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Straighten your teeth discreetly with modern invisible clear aligners, ceramic braces, and expert bite alignment.</p>
+                    </div>
+                    <a href="#appointment-form" onclick="selectService('Orthodontics & Aligners')" class="inline-flex items-center gap-2 text-sm font-bold text-gold transition hover:text-goldLight">
+                        <span>Book Treatment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-darkBg border border-gold/10 rounded-3xl p-6 shadow-sm service-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-3">Dental Implants & Crowns</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Replace missing teeth permanently with durable titanium implants, crowns, bridges, and painless root canals.</p>
+                    </div>
+                    <a href="#appointment-form" onclick="selectService('Dental Implants & Crowns')" class="inline-flex items-center gap-2 text-sm font-bold text-gold transition hover:text-goldLight">
+                        <span>Book Treatment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+
+                <div class="bg-darkBg border border-gold/10 rounded-3xl p-6 shadow-sm service-card flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-2xl bg-gold/10 text-gold flex items-center justify-center text-2xl mb-6 shadow-sm">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                        <h3 class="text-xl font-serif font-bold text-white mb-3">Pediatric & Family Dentistry</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed mb-6">Gentle, fear-free dental checkups and preventive fluoride care designed specially for children and family members.</p>
+                    </div>
+                    <a href="#appointment-form" onclick="selectService('Pediatric & Family Dentistry')" class="inline-flex items-center gap-2 text-sm font-bold text-gold transition hover:text-goldLight">
+                        <span>Book Treatment</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-us" class="dark-hex-pattern py-20 px-4 sm:px-6 lg:px-8 text-white relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-96 h-96 bg-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 space-y-6">
+                    <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">The Difference</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold leading-tight">Why Patients Trust Dr. Naveed Yaseen</h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        We combine expert clinical proficiency with genuine compassion. Our clinic is meticulously designed with modern luxury seating and ambient lighting to provide a stress-free dental experience.
+                    </p>
+                    <div class="pt-2">
+                        <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20want%20to%20consult%20regarding%20dental%20care." target="_blank" class="inline-flex items-center gap-2 gold-btn text-darkBg px-6 py-3.5 rounded-xl font-extrabold shadow-lg transition">
+                            <i class="fa-brands fa-whatsapp text-lg text-emerald-800"></i> Consult Dr. Naveed Yaseen
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div class="bg-charcoal border border-gold/15 p-6 rounded-3xl backdrop-blur-md hover:border-gold/40 transition shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-user-nurse"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Expert Dental Care</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Skilled dental treatments ensuring complete comfort, precision, and gentle care for men, women, and children.</p>
+                    </div>
+
+                    <div class="bg-charcoal border border-gold/15 p-6 rounded-3xl backdrop-blur-md hover:border-gold/40 transition shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-microscope"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Modern Clinic & Advanced Equipment</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Equipped with digital radiography, ultrasonic scalers, and hospital-grade autoclave sterilization for 100% safety.</p>
+                    </div>
+
+                    <div class="bg-charcoal border border-gold/15 p-6 rounded-3xl backdrop-blur-md hover:border-gold/40 transition shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Luxury Clinic Environment</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Relaxing seating decor with warm lighting, modern wood paneling, and zero clinical anxiety.</p>
+                    </div>
+
+                    <div class="bg-charcoal border border-gold/15 p-6 rounded-3xl backdrop-blur-md hover:border-gold/40 transition shadow-lg">
+                        <div class="w-12 h-12 rounded-xl bg-gold/15 text-gold flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                        </div>
+                        <h3 class="text-lg font-bold text-white mb-2">Transparent & Affordable Fees</h3>
+                        <p class="text-slate-400 text-xs sm:text-sm leading-relaxed">Clear upfront pricing with no hidden costs and flexible treatment packages suited for families.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Profile Section -->
+    <section id="doctor" class="py-20 px-4 sm:px-6 lg:px-8 bg-darkBg relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="bg-charcoal border border-gold/15 rounded-3xl p-8 sm:p-12 shadow-xl grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-5 relative">
+                    <div class="absolute -inset-4 bg-gradient-to-tr from-gold/20 to-goldDark/10 rounded-3xl transform -rotate-2"></div>
+                    <div class="relative hero-dark rounded-2xl overflow-hidden shadow-2xl aspect-[4/5] flex items-center justify-center text-white border-4 border-gold/30">
+                        <div class="text-center p-8">
+                            <div class="w-32 h-32 mx-auto mb-6 rounded-full bg-gold/15 border-4 border-gold/40 flex items-center justify-center text-gold text-5xl shadow-lg">
+                                <i class="fa-solid fa-user-doctor"></i>
+                            </div>
+                            <h3 class="text-2xl font-serif font-bold text-white">Dr. Naveed Yaseen</h3>
+                            <p class="gold-gradient-text font-semibold text-sm mt-1">BDS, FCPS (Operative Dentistry)</p>
+                            <p class="text-slate-400 text-xs mt-3">Lead Consultant & Cosmetic Dental Surgeon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">Meet Your Dentist</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">Dr. Naveed Yaseen</h2>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        With years of dedicated clinical experience, Dr. Naveed Yaseen is renowned for his gentle touch, precision in cosmetic dentistry, and empathetic approach to patient comfort.
+                    </p>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Graduating with distinction and holding advanced postgraduate certifications, he believes every patient deserves a radiant, healthy smile without dental anxiety.
+                    </p>
+
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+                        <div class="bg-darkBg p-4 rounded-2xl border border-gold/15 text-center shadow-sm">
+                            <span class="block text-2xl font-serif font-bold text-gold">10+</span>
+                            <span class="text-xs text-slate-500 font-medium">Years Experience</span>
+                        </div>
+                        <div class="bg-darkBg p-4 rounded-2xl border border-gold/15 text-center shadow-sm">
+                            <span class="block text-2xl font-serif font-bold text-gold">5,000+</span>
+                            <span class="text-xs text-slate-500 font-medium">Happy Patients</span>
+                        </div>
+                        <div class="bg-darkBg p-4 rounded-2xl border border-gold/15 text-center col-span-2 sm:col-span-1 shadow-sm">
+                            <span class="block text-2xl font-serif font-bold text-gold">100%</span>
+                            <span class="text-xs text-slate-500 font-medium">Sterilization</span>
+                        </div>
+                    </div>
+
+                    <div class="pt-4 flex items-center gap-4 flex-wrap">
+                        <a href="#appointment-form" class="gold-btn text-darkBg font-bold px-6 py-3.5 rounded-xl shadow-md transition text-sm">
+                            Book Consultation
+                        </a>
+                        <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20would%20like%20to%20speak%20with%20you." target="_blank" class="text-emerald-400 hover:text-emerald-300 font-semibold text-sm flex items-center gap-2">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Direct WhatsApp Inquiry
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">Patient Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-4 mb-4">Trusted by 5,000+ Smiling Patients</h2>
+                <div class="flex items-center justify-center gap-2 text-amber-500 text-sm">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <span class="text-slate-300 font-bold ml-1">4.9 / 5.0 Rating on Google Reviews</span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-darkBg border border-gold/15 rounded-3xl p-8 shadow-sm flex flex-col justify-between relative hover:border-gold/40 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute top-6 right-6 text-xl">
+                        <i class="fa-brands fa-google text-slate-500"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Excellent dental care! The clinic is very clean and modern. Dr. Naveed is professional, kind, and explained everything clearly. Highly recommended for families."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-gold/10 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gold text-darkBg font-bold flex items-center justify-center text-sm">AK</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Ahmed Khan</h4>
+                            <span class="text-xs text-slate-500">Google Verified Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-darkBg border border-gold/15 rounded-3xl p-8 shadow-sm flex flex-col justify-between relative hover:border-gold/40 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute top-6 right-6 text-xl">
+                        <i class="fa-brands fa-google text-slate-500"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Best dentist visit I've had! Dr. Naveed has such a calm way with patients. Honest, skilled, and doesn't push unnecessary work. Will definitely come back."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-gold/10 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-emerald-600 text-white font-bold flex items-center justify-center text-sm">FS</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Fatima Shah</h4>
+                            <span class="text-xs text-slate-500">Google Verified Review</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-darkBg border border-gold/15 rounded-3xl p-8 shadow-sm flex flex-col justify-between relative hover:border-gold/40 hover:shadow-lg transition-all duration-300">
+                    <div class="absolute top-6 right-6 text-xl">
+                        <i class="fa-brands fa-google text-slate-500"></i>
+                    </div>
+                    <div>
+                        <div class="flex items-center gap-1 text-amber-500 text-sm mb-4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-slate-300 text-sm italic leading-relaxed mb-6">
+                            "Highly recommended! The doctor is very skilled and caring, the staff is polite, and the clinic is exceptionally clean. Very satisfied with my treatment."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-3 border-t border-gold/10 pt-4">
+                        <div class="w-10 h-10 rounded-full bg-gold text-darkBg font-bold flex items-center justify-center text-sm">MA</div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Muhammad Ali</h4>
+                            <span class="text-xs text-slate-500">Google Verified Review</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 px-4 sm:px-6 lg:px-8 bg-darkBg border-t border-gold/10">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">Got Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-4 mb-4">Frequently Asked Questions</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Everything you need to know about visiting Yaseen Dental Care.</p>
+            </div>
+
+            <div class="space-y-4">
+                <div class="bg-charcoal border border-gold/15 rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-serif font-bold text-white text-lg mb-2">Are the dental treatments completely painless?</h3>
+                    <p class="text-slate-400 text-sm">Yes! Dr. Naveed Yaseen uses modern painless techniques, advanced local anesthetics, and gentle care protocols to ensure maximum patient comfort.</p>
+                </div>
+                <div class="bg-charcoal border border-gold/15 rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-serif font-bold text-white text-lg mb-2">What services does Yaseen Dental Care offer?</h3>
+                    <p class="text-slate-400 text-sm">We offer cosmetic dentistry, teeth whitening, orthodontics, dental implants, crowns, pediatric dentistry, and general checkups.</p>
+                </div>
+                <div class="bg-charcoal border border-gold/15 rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-serif font-bold text-white text-lg mb-2">Where exactly is the clinic located on GT Road?</h3>
+                    <p class="text-slate-400 text-sm">We are conveniently located on Main GT Road with ample parking space available right outside.</p>
+                </div>
+                <div class="bg-charcoal border border-gold/15 rounded-2xl p-6 shadow-sm">
+                    <h3 class="font-serif font-bold text-white text-lg mb-2">How can I book an appointment?</h3>
+                    <p class="text-slate-400 text-sm">You can fill out our instant booking form on this website or tap the WhatsApp button in the bottom right corner for immediate confirmation.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location & Contact Section -->
+    <section id="location" class="py-20 px-4 sm:px-6 lg:px-8 bg-charcoal border-t border-gold/10">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="gold-pill font-bold tracking-widest uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full inline-block">Visit Our Clinic</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white mt-4 mb-4">Clinic Location & Hours</h2>
+                <p class="text-slate-400 text-sm sm:text-base">Conveniently situated on Main GT Road with easy parking and accessible facilities.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+                <div class="lg:col-span-5 hero-dark text-white rounded-3xl p-8 sm:p-10 flex flex-col justify-between shadow-2xl shadow-black/30 border border-gold/20 diagonal-stripes">
+                    <div class="space-y-6 relative z-10">
+                        <h3 class="text-2xl font-serif font-bold gold-gradient-text">Yaseen Dental Care</h3>
+                        <p class="text-slate-400 text-sm leading-relaxed">
+                            Premier dental care facility led by Dr. Naveed Yaseen, featuring state-of-the-art operatories and modern waiting lounges on Main GT Road.
+                        </p>
+
+                        <div class="space-y-4 pt-2">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold flex items-center justify-center shrink-0 border border-gold/20">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase text-slate-500 font-semibold">Address</h4>
+                                    <p class="text-sm font-medium text-white">Main GT Road, Gujranwala</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold flex items-center justify-center shrink-0 border border-gold/20">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase text-slate-500 font-semibold">Phone / WhatsApp</h4>
+                                    <p class="text-sm font-medium text-white">0311 7473314</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-gold/15 text-gold flex items-center justify-center shrink-0 border border-gold/20">
+                                    <i class="fa-solid fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-xs uppercase text-slate-500 font-semibold">Opening Hours</h4>
+                                    <p class="text-sm font-medium text-white">Monday - Saturday: 3:00 PM - 9:00 PM</p>
+                                    <p class="text-xs text-gold mt-0.5">Sunday: By Special Appointment Only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-8 space-y-3 relative z-10">
+                        <a href="https://maps.app.goo.gl/vMaRKV37uNJ2pp7FA" target="_blank" rel="noopener noreferrer" class="w-full gold-btn text-darkBg font-extrabold py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-solid fa-map-pin"></i> Open Google Maps Pin
+                        </a>
+                        <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20want%20directions%20to%20the%20clinic%20on%20GT%20Road." target="_blank" class="w-full bg-emerald-500 hover:bg-emerald-600 text-white font-bold py-3.5 rounded-xl shadow-md transition flex items-center justify-center gap-2 text-sm">
+                            <i class="fa-brands fa-whatsapp text-lg"></i> Get Directions via WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-7 flex flex-col gap-4">
+                    <div class="bg-charcoal rounded-3xl overflow-hidden shadow-xl border border-gold/15 flex-grow min-h-[400px]">
+                        <iframe
+                            src="https://maps.google.com/maps?q=GT+Road+Gujranwala&output=embed"
+                            width="100%"
+                            height="100%"
+                            style="border:0; min-height: 400px;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"
+                            title="Yaseen Dental Care Clinic Location on GT Road">
+                        </iframe>
+                    </div>
+                    <a href="https://maps.app.goo.gl/vMaRKV37uNJ2pp7FA" target="_blank" rel="noopener noreferrer" class="bg-darkBg hover:bg-charcoal text-white text-center font-bold py-3.5 px-6 rounded-2xl shadow-md transition flex items-center justify-center gap-2 text-sm border border-gold/20">
+                        <i class="fa-solid fa-map-location-dot text-gold"></i> Open Exact Location in Google Maps App
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="hero-dark text-white py-12 px-4 sm:px-6 lg:px-8 border-t border-gold/15 relative overflow-hidden diagonal-stripes">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-12 relative z-10">
+            <div class="space-y-4 md:col-span-2">
+                <div class="flex items-center gap-3">
+                    <div class="w-12 h-12 rounded-xl gold-btn flex items-center justify-center shadow-md">
+                        <svg viewBox="0 0 100 100" class="w-8 h-8">
+                            <path d="M30 38 L35 18 L42 30 L50 14 L58 30 L65 18 L70 38 Z" fill="#1A1A1A"/>
+                            <circle cx="35" cy="17" r="2.5" fill="#1A1A1A"/>
+                            <circle cx="42" cy="29" r="2" fill="#1A1A1A"/>
+                            <circle cx="50" cy="13" r="2.5" fill="#1A1A1A"/>
+                            <circle cx="58" cy="29" r="2" fill="#1A1A1A"/>
+                            <circle cx="65" cy="17" r="2.5" fill="#1A1A1A"/>
+                            <rect x="28" y="37" width="44" height="4" rx="1.5" fill="#1A1A1A"/>
+                            <path d="M36 45 C36 42 42 41 50 44 C58 41 64 42 64 45 C67 52 66 62 62 67 C59 71 57 79 54 83 C53 85 51 86 50 86 C49 86 47 85 46 83 C43 79 41 71 38 67 C34 62 33 52 36 45 Z" fill="#1A1A1A"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <span class="text-xl font-serif font-bold gold-gradient-text tracking-wide">Yaseen Dental Care</span>
+                        <span class="block text-[10px] font-semibold tracking-[0.2em] text-goldLight/50 uppercase">Say it with smile</span>
+                    </div>
+                </div>
+                <p class="text-sm max-w-sm text-slate-400">
+                    Providing professional, and state-of-the-art cosmetic and family dental care on Main GT Road in a welcoming, modern clinic environment.
+                </p>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-white text-sm font-bold uppercase tracking-wider">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#services" class="hover:text-gold transition text-slate-400">Core Services</a></li>
+                    <li><a href="#why-us" class="hover:text-gold transition text-slate-400">Why Us</a></li>
+                    <li><a href="#doctor" class="hover:text-gold transition text-slate-400">Dr. Naveed Yaseen</a></li>
+                    <li><a href="#testimonials" class="hover:text-gold transition text-slate-400">Patient Reviews</a></li>
+                    <li><a href="#location" class="hover:text-gold transition text-slate-400">Clinic Location</a></li>
+                </ul>
+            </div>
+
+            <div class="space-y-3">
+                <h4 class="text-white text-sm font-bold uppercase tracking-wider">Contact & Hours</h4>
+                <p class="text-sm text-slate-400">Main GT Road, Gujranwala</p>
+                <p class="text-sm text-slate-400">Phone: 0311 7473314</p>
+                <p class="text-sm text-slate-400">Mon - Sat: 3:00 PM - 9:00 PM</p>
+                <div class="pt-2 flex items-center gap-3 text-lg">
+                    <a href="https://wa.me/923117473314" target="_blank" class="text-gold hover:text-goldLight transition"><i class="fa-brands fa-whatsapp"></i></a>
+                    <a href="tel:+923117473314" class="text-gold hover:text-goldLight transition"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-gold/15 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 relative z-10">
+            <p>&copy; 2026 Yaseen Dental Care - Dr. Naveed Yaseen. All rights reserved.</p>
+            <p class="mt-2 sm:mt-0">Say it with smile</p>
+        </div>
+    </footer>
+
+    <!-- Sticky Floating WhatsApp Button -->
+    <a href="https://wa.me/923117473314?text=Hello%20Dr.%20Naveed%20Yaseen,%20I%20would%20like%20to%20inquire%20about%20an%20appointment." target="_blank" rel="noopener noreferrer" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-16 h-16 rounded-full shadow-2xl shadow-emerald-500/30 flex items-center justify-center text-3xl transition transform hover:scale-110 animate-bounce group" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="absolute right-full mr-3 bg-white text-slate-800 text-xs font-bold px-3 py-1.5 rounded-xl shadow-lg whitespace-nowrap opacity-0 group-hover:opacity-100 transition duration-300 pointer-events-none">
+            Chat with Dr. Naveed Yaseen
+        </span>
+    </a>
+
+    <!-- JavaScript -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        const dateInput = document.getElementById('patient-date');
+        if (dateInput) {
+            const today = new Date().toISOString().split('T')[0];
+            dateInput.value = today;
+            dateInput.min = today;
+        }
+
+        function selectService(serviceName) {
+            const serviceSelect = document.getElementById('patient-service');
+            if (serviceSelect) {
+                for (let i = 0; i < serviceSelect.options.length; i++) {
+                    if (serviceSelect.options[i].value === serviceName) {
+                        serviceSelect.selectedIndex = i;
+                        break;
+                    }
+                }
+            }
+        }
+
+        function getServiceMessage(service, name, phone, date, time) {
+            const messages = {
+                'Cosmetic Dentistry & Teeth Whitening': `Hello Dr. Naveed Yaseen,\n\nI am interested in *Cosmetic Dentistry & Teeth Whitening* services.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nI would like to know more about teeth whitening options and pricing. Please confirm my consultation.`,
+                'Orthodontics & Aligners': `Hello Dr. Naveed Yaseen,\n\nI would like to book an *Orthodontics & Clear Aligners* consultation.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nI am interested in teeth alignment options. Please confirm my appointment.`,
+                'Dental Implants & Crowns': `Hello Dr. Naveed Yaseen,\n\nI need information about *Dental Implants & Crowns*.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nI am looking for permanent tooth replacement solutions. Please confirm my consultation.`,
+                'Pediatric & Family Dentistry': `Hello Dr. Naveed Yaseen,\n\nI would like to schedule a *Pediatric & Family Dentistry* visit.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nI need a dental checkup for my child/family member. Please confirm a gentle appointment.`,
+                'General Consultation & Checkup': `Hello Dr. Naveed Yaseen,\n\nI would like a *General Dental Checkup & Consultation*.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nI would like a routine dental examination and professional cleaning. Please confirm my appointment.`
+            };
+            return messages[service] || `Hello Dr. Naveed Yaseen,\n\nI would like to book an appointment for *${service}*.\n\n*Patient Name:* ${name}\n*Phone:* ${phone}\n*Preferred Date:* ${date}\n*Time Slot:* ${time}\n\nPlease confirm my appointment.`;
+        }
+
+        function handleBooking(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('patient-name').value;
+            const phone = document.getElementById('patient-phone').value;
+            const service = document.getElementById('patient-service').value;
+            const date = document.getElementById('patient-date').value;
+            const time = document.getElementById('patient-time').value;
+
+            const whatsappMessage = getServiceMessage(service, name, phone, date, time);
+            const encodedMessage = encodeURIComponent(whatsappMessage);
+            const whatsappUrl = `https://wa.me/923117473314?text=${encodedMessage}`;
+
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
